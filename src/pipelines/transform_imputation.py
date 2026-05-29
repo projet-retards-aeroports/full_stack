@@ -1,8 +1,8 @@
 import argparse
 import pandas as pd
 import io
-from custom_libs.load_from import load_from_s3
-from custom_libs.save_to import save_to_s3
+from src.pipelines.custom_libs.load_from import load_from_s3
+from src.pipelines.custom_libs.save_to import save_to_s3
 
 
 def impute_missing_values(df: pd.DataFrame) -> pd.DataFrame:

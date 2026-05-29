@@ -6,8 +6,8 @@ from datetime import datetime
 import holidays
 from vacances_scolaires_france import SchoolHolidayDates
 
-from custom_libs.load_from import load_from_s3
-from custom_libs.save_to import save_to_s3
+from src.pipelines.custom_libs.load_from import load_from_s3
+from src.pipelines.custom_libs.save_to import save_to_s3
 
 
 def enrich_aircraft_features(df: pd.DataFrame) -> pd.DataFrame:
